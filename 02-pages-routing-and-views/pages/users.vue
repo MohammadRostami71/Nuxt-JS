@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header/>
     <input type="text" v-model.trim="userId"/>
     <button @click="onLoadUser">Load User</button>
     <nuxt-child/>
@@ -8,10 +7,8 @@
 </template>
 
 <script>
-import Header from "../components/Header";
 export default {
   name: "users",
-  components: {Header},
   data() {
     return {
       userId: ''
